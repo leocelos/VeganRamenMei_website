@@ -1,0 +1,59 @@
+:root{
+  /* カラーパレット：可愛い×自然×落ち着き */
+  --brown:   #7B5E57;
+  --pink:    #F5B5C2;
+  --blue:    #A7D8F2;
+  --cream:   #FAF7F2;
+  --ink:     #2b2b2b;
+}
+
+*{ box-sizing: border-box; }
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.6;
+}
+
+/* ヒーロー（トップバナー） */
+.hero{
+  background: linear-gradient(180deg, var(--pink), var(--blue));
+  color: #222;
+  padding-bottom: 4rem;
+}
+.nav{
+  display:flex; gap:1rem; align-items:center; justify-content:space-between;
+  padding: 1rem 1.25rem;
+}
+.nav a{ text-decoration:none; color:#222; font-weight:600; }
+.logo{ font-weight:800; letter-spacing:.3px; }
+.hero__content{
+  padding: 3rem 1.25rem 0;
+  max-width: 900px; margin: 0 auto;
+}
+.hero h1{ margin:0 0 .5rem 0; font-size: clamp(1.6rem, 4vw, 2.6rem); }
+.btn{
+  display:inline-block; margin-top:1rem;
+  background: var(--brown); color:white; text-decoration:none;
+  padding:.75rem 1rem; border-radius:.5rem; font-weight:700;
+}
+
+/* 特徴 */
+.features{ padding: 3rem 1.25rem; max-width: 900px; margin: 0 auto; }
+.features h2{ margin-top:0; }
+.feature-list{
+  display:grid; gap:.75rem; padding-left:1rem;
+  grid-template-columns: 1fr;
+}
+.note{ margin-top: .75rem; opacity:.8; }
+
+/* お問い合わせ */
+.contact{ padding: 3rem 1.25rem; max-width: 900px; margin: 0 auto; }
+.contact ul{ margin: .5rem 0 0 1.2rem; }
+
+/* フッター */
+.footer{
+  background: var(--brown); color: white; text-align:center;
+  padding: 1rem;
+}
